@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+
+\usepackage{latexsym, enumerate}
+\usepackage[russian,english]{babel}
+\usepackage[cp1251]{inputenc}
+\usepackage[T2A]{fontenc}
+%\usepackage{times}
+%\usepackage{mathptmx}
+
+
+\newcommand{\name}{Curriculum Management System}
+
+\newtheorem{theorem}{\bf Theorem}[section]
+\newtheorem{example}[theorem]{\bf Example}
+
+\newsavebox{\Endmark}
+
+
+\begin{document}
+\title{Curri}
+
+\author{Timur Bakibayev, Kuanysh Abeshev \\ {\small Almaty, Kazakhstan} }
+
+\date{January 2018}
+
+\maketitle
+
+\section{Introduction}
+
+\input{goal.tex}
+
+\section{Logic}
+
+\input{logic.tex}
+
+\section{Back-End}
+
+\section{Database structure}
+
+\input{db.tex}
+
+\section{REST architecture}
+
+\input{rest.tex}
+
+\section{Front-End}
+
+\section{Web User Interface (UX)}
+
+\input{ui.tex}
+
+\end{document}

@@ -1,0 +1,90 @@
+\subsection{Functionality}
+
+
+
+
+
+\subsubsection{Topics}
+
+A topic is the base unit for the curriculum structure. A course consists of a list of topics. 
+
+Each topic may have a prerequisite topic.
+
+When courses are combined, courses prerequisites will be calculated automatically.
+
+Fields:
+\begin{enumerate}
+\item Description
+\item Minimum number of hours
+\item Textbook id
+\item Pages (text)
+\end{enumerate}
+
+Topic-Textbook - Many-to-many
+
+\subsubsection{Courses}
+
+Fields:
+\begin{enumerate}
+\item Name
+\item Description
+\item Pages (text)
+\end{enumerate}
+
+
+\subsubsection{Courses-Topics Many-to-Many}
+Fields:
+\begin{enumerate}
+\item Course Id
+\item Topic Id
+\item Week No
+\item Hours
+\end{enumerate}
+
+\subsubsection{Textbooks}
+
+Fields:
+\begin{enumerate}
+\item Authors
+\item Name
+\item Publisher
+\item Year
+\item ISBN
+\item Link
+\end{enumerate}
+
+
+\subsubsection{Learning Outcomes}
+
+Each topic has learning outcomes. This is needed for combining learning outcomes for the course and for the curriculum. 
+
+Fields:
+\begin{enumerate}
+\item Topic Id
+\item Description
+\end{enumerate}
+
+\subsubsection{Curriculum}
+
+Fields:
+\begin{enumerate}
+\item Department Id
+\item Description
+\item Specialty
+\item Year (cohort/graduation year)
+\end{enumerate}
+
+\subsubsection{Curriculum-Courses Many-to-Many}
+
+Fields:
+\begin{enumerate}
+\item Course Code 
+\item Name (it may differ from course original name)
+\item Curriculum Id
+\item Course Id [not required]
+\item Hours
+\item Credits
+\item ECTS Credits
+\item Labels
+\end{enumerate}
+
